@@ -1,3 +1,4 @@
+// good
 public class ThreeArrayRange {
     public static void main(String[] args) {
         int[] a = {5, 1, 3};
@@ -8,6 +9,7 @@ public class ThreeArrayRange {
                     min = a[i];
                     System.out.println("min: " + min);
             }
+            // NOTE: the 'else' on the following line makes me really uncomfortable, although I think it's logically equivalent to two simple if statements (which I prefer)
             else if (a[i] > max) {
                     max = a[i];
                     System.out.println("max: " + max);
