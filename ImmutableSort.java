@@ -3,6 +3,9 @@ public class ImmutableSort {
         int[] a = {4, 3, 2};
         int[] b = a; // b is a reference to a
         // Sort the array without modifying a
+        // FIXME: you're totally right... b is a reference to a. Which means you are inadvertently modifying a. You should be creating a new array, with the 'new' keyword
+
+        // NOTE: I agree this is bubble sort
         //bubble sort i think
         int temp = a[0];
         
